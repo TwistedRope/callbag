@@ -3,10 +3,10 @@
 Simple callbag implementation.
 
 This system is using ES6 syntax. It works directly with NodeJS. 
-But, in order to be used in browsers you will need to transpile the library [README.md#Development](see below).
+But, in order to be used in browsers you will need to transpile the library(see below).
 
 There is 1 entry point: 
-- [index.js]() <-> The library.
+- index.js <-> The library.
 
 
 ## Resources
