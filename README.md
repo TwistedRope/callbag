@@ -46,7 +46,7 @@ const aCallBag = createCallbag();
 
 In a browser:
 ```
-<script type="text/javascript" charset="UTF-8" src="node_modules/callbag/callbag.browser.js"></script>
+<script type="text/javascript" charset="UTF-8" src="callbag.min.js"></script>
 <script type="text/javascript">
   var aCallBag = createCallbag();
 

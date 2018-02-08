@@ -7,12 +7,13 @@ module.exports = {
   devtool: false,
 
   entry: {
-    app: './index.js',
+    callbag: './index.js',
+    'callbag.min': './index.js',
   },
 
   output: {
     path: __dirname,
-    filename: 'callbag.browser.js',
+    filename: '[name].js',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
@@ -35,6 +36,9 @@ module.exports = {
 
   plugins: [
     new FriendlyErrorsPlugin(),
-    new UglifyJsPlugin({ minimize: true }),
+    new UglifyJsPlugin({
+      include: /\.min\.js$/,
+      minimize: true,
+    }),
   ],
 };
